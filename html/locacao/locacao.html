@@ -1,11 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- Barra de Navegação -->
+    <header>
+        <nav>
+            <img src="img/logo_verde-removebg-preview (1).png" alt="logo Multi Ser">
+            <ul class="links">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../sobreNos/sobreNos.html">
+                    <li>Sobre nós</li>
+                </a>
+                <a href="html/clinicaSocial/clinicaSocial.html">
+                    <li>Clinica social</li>
+                </a>
+                <a href="html/locacao/locacao.html">
+                    <li>Locação</li>
+                </a>
+            </ul>
+            <ul class="icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <li><i class="fab fa-facebook"></i></li>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <li><i class="fab fa-instagram"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Botão de Acessibilidade -->
+    <button class="botao-acessibilidade" title="Acessibilidade" aria-label="Botão de acessibilidade">
+        <i class="fas fa-universal-access"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const botaoAcessibilidade = document.querySelector('.botao-acessibilidade');
+            const body = document.body;
+
+            botaoAcessibilidade.addEventListener('click', function () {
+                // Alterna entre fonte normal e maior
+                body.classList.toggle('fonte-maior');
+
+                // Alterna entre contraste normal e alto
+                body.classList.toggle('contraste-alto');
+
+                // Atualiza o título do botão para indicar o estado atual
+                if (body.classList.contains('fonte-maior') || body.classList.contains('contraste-alto')) {
+                    botaoAcessibilidade.setAttribute('title', 'Desativar recursos de acessibilidade');
+                } else {
+                    botaoAcessibilidade.setAttribute('title', 'Ativar recursos de acessibilidade');
+                }
+            });
+        });
+    </script>
+
+
+
+    <!-- Texto Introdutivo -->
+
+    <section>
+
+        <img src="" alt="Imagem1">
+        <img src="" alt="Imagem2">
+        <img src="" alt="Imagem3">
+
+        <h1>Alugue uma das nossas salas e faça parte da equipe Multi Ser</h1>
+        <p>jskçjkrj fwrfwf j wçef wrfwrjfçqiuwewjkfw hajiwhu weflhjw fwah flkwah
+            jlewrjhlfehrfdfla w wfterfhlwhf hjrfweahflw rfejkwh fwaf waf</p>
+
+        <button onclick="()">Agendar Visita</button>
+
+
+        <script>
+
+        </script>
+
+    </section>
+
+
+    <!-- Valores -->
+
+    <section>
+
+
+        <img src="" alt="texto">
+        <img src="" alt="tabela">
+
+
+    </section>
+
+
+    <!-- Agendamento -->
+
+    <div class="container">
+
+        <div id="Legenda">
+            <h1>Agende sua avaliação:</h1>
+        </div>
+
+        <div id="Formulario-">
+            <form action="">
+            <label for="nome">Nome Completo</label>
+            <input type="text">
+            </form>
+           
+        </div>
+
+        <button onclick="()">Agendar Visita</button>
+
+
+        <script>
+
+        </script>
+
+    </div>
+
+
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
