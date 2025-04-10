@@ -54,3 +54,28 @@ nav img {
 .icons a:hover {
     color: #f0f0f0;
 }
+
+/* Botão de Acessibilidade */
+.botao-acessibilidade {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: #4a8b7a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.botao-acessibilidade:hover {
+    background-color: #3a7a6a;
+    transform: scale(1.1);
+}
+
+.botao-acessibilidade i {
+    font-size: 2.5rem;
+}
