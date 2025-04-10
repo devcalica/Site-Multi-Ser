@@ -7,9 +7,25 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #101010;
+    color: white;
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+}
+
+h2{
+    letter-spacing: 0.05em;
+}
+
 header {
-    background-color: #6EAE9C;
-    padding: 1rem;
+    background-color: #15201D;
+    padding: 1.5rem;
 }
 
 nav {
@@ -21,7 +37,7 @@ nav {
 }
 
 nav img {
-    height: 50px;
+    height: 60px;
 }
 
 .links {
@@ -33,11 +49,13 @@ nav img {
 .links a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
 }
 
 .links a:hover {
-    color: #f0f0f0;
+    color: #fffd83;
 }
 
 .icons {
@@ -48,11 +66,11 @@ nav img {
 
 .icons a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .icons a:hover {
-    color: #f0f0f0;
+    color: #fffd83;
 }
 
 /* Botão de Acessibilidade */
@@ -67,7 +85,7 @@ nav img {
     border-radius: 50%;
     cursor: pointer;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
