@@ -78,8 +78,8 @@ nav img {
     position: fixed;
     top: 80px;
     right: 20px;
-    background-color: #4a8b7a;
-    color: white;
+    background-color: #fffd83;
+    color: #101010;
     border: none;
     padding: 10px;
     border-radius: 50%;
@@ -90,7 +90,7 @@ nav img {
 }
 
 .botao-acessibilidade:hover {
-    background-color: #3a7a6a;
+    background-color: #dfdb00;
     transform: scale(1.1);
 }
 
