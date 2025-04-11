@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
-    <title>Multi Ser</title>
+    <link rel="stylesheet" href="/css/loca.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Locação</title>
 </head>
 
 <body>
@@ -79,11 +80,15 @@
             </div>
 
             <div id="text-intro">
-                <h2>Alugue uma das nossas salas e faça parte da equipe Multi Ser</h2>
-                <p>jskçjkrj fwrfwf j wçef wrfwrjfçqiuwewjkfw hajiwhu weflhjw fwah flkwah
-                    jlewrjhlfehrfdfla w wfterfhlwhf hjrfweahflw rfejkwh fwaf waf</p>
+                <h2>Alugue uma das nossas salas <br> e faça parte da equipe Multi Ser</h2><br>
+                <p id="parag-text-intro">A Multiser é uma clínica de psicologia pensada para acolher tanto os pacientes
+                    quanto os profissionais. Oferecemos um ambiente tranquilo, confortável e com
+                    toda a estrutura necessária para atendimentos individuais, em grupo ou supervisões.
+                    Alugue uma das nossas salas na Multiser e faça parte da nossa equipe. 
+                    Aqui, você encontra mais do que um espaço: encontra uma rede de apoio, troca de experiências e valorização do seu trabalho.
+                </p><br>
 
-                <button onclick="">Agendar Visita</button>
+                <button class="button-agendar">Agendar Visita</button>
             </div>
 
         </div>
@@ -99,9 +104,9 @@
 
     <section>
 
-        <div id="img-tabela">
-            <img src="" alt="texto">
-            <img src="" alt="tabela">
+        <div class="img-tabela">
+            <img src="/img/diferencial da sublocacao.png" alt="texto" id="img-text-dif">
+            <img src="/img/tabela de valores.png" alt="tabela" id="img-tab-dif">
         </div>
 
     </section>
@@ -115,27 +120,24 @@
             <div id="caption-container1">
                 <h2>Agende sua avaliação:</h2>
             </div>
-
-            <div id="form-location">
-                <form action="">
-
+                    <!--ADICIONAR EMAIL DA CLINICA E AJUSTAR REQUIRED-->
+                <form action="mailto:" id="form-location">
                     <label for="name">Nome Completo</label>
-                    <input type="text" placeholder="Nome Completo">
-
+                    <input type="text" id="name" name="name" placeholder="Nome Completo" required> <br>
+                
                     <label for="email">Email</label>
-                    <input type="email" placeholder="exemplo@exemplo.com">
-
-                    <label for="name">Celular Pessoal</label>
-                    <input type="number" placeholder="(00) 00000-0000">
-
+                    <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required> <br>
+                
+                    <label for="phone">Celular Pessoal</label>
+                    <input type="text" id="phone" name="phone" placeholder="(00) 00000-0000" required> <br>
                 </form>
 
-            </div>
-
             <div id="button-form">
-                <button onclick="">Agendar Visita</button>
+                <button class="button-agendar">Agendar Visita</button>
             </div>
 
+        </div>
+        
             <script>
 
             </script>
@@ -143,7 +145,7 @@
         </div>
     </section>
 
-
+<!--Horário de Funcionamento-->
 
     <article>
 
@@ -160,7 +162,7 @@
                     tenetur sint in illum eveniet quam ullam beatae assumenda ducimus animi
                     deserunt nulla obcaecati, molestiae aperiam voluptates, consectetur magni maxime. Autem.</p>
 
-                <button type="submit">Agendar Visita</button>
+                <button class="button-agendar">Agendar Visita</button>
             </div>
 
             <div id="map-container2">
@@ -178,7 +180,7 @@
     </article>
 
 
-
+<!--Mais informações-->
 
     <footer>
 
