@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/loca.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Locação</title>
 </head>
@@ -42,29 +43,29 @@
     <!-- Botão de Acessibilidade -->
     <button class="botao-acessibilidade" title="Acessibilidade" aria-label="Botão de acessibilidade">
         <i class="fas fa-universal-access"></i>
-      </button>
-    
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const botaoAcessibilidade = document.querySelector('.botao-acessibilidade');
-          const body = document.body;
-          
-          botaoAcessibilidade.addEventListener('click', function() {
-            // Alterna entre fonte normal e maior
-            body.classList.toggle('fonte-maior');
-            
-            // Alterna entre contraste normal e alto
-            body.classList.toggle('contraste-alto');
-            
-            // Atualiza o título do botão para indicar o estado atual
-            if (body.classList.contains('fonte-maior') || body.classList.contains('contraste-alto')) {
-              botaoAcessibilidade.setAttribute('title', 'Desativar recursos de acessibilidade');
-            } else {
-              botaoAcessibilidade.setAttribute('title', 'Ativar recursos de acessibilidade');
-            }
-          });
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const botaoAcessibilidade = document.querySelector('.botao-acessibilidade');
+            const body = document.body;
+
+            botaoAcessibilidade.addEventListener('click', function () {
+                // Alterna entre fonte normal e maior
+                body.classList.toggle('fonte-maior');
+
+                // Alterna entre contraste normal e alto
+                body.classList.toggle('contraste-alto');
+
+                // Atualiza o título do botão para indicar o estado atual
+                if (body.classList.contains('fonte-maior') || body.classList.contains('contraste-alto')) {
+                    botaoAcessibilidade.setAttribute('title', 'Desativar recursos de acessibilidade');
+                } else {
+                    botaoAcessibilidade.setAttribute('title', 'Ativar recursos de acessibilidade');
+                }
+            });
         });
-      </script>
+    </script>
 
 
 
@@ -74,9 +75,12 @@
 
         <div class="location-intro">
             <div id="img-intro">
-                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Imagem1">
-                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Imagem2">
-                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Imagem3">
+                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+                    alt="Imagem1">
+                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+                    alt="Imagem2">
+                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+                    alt="Imagem3">
             </div>
 
             <div id="text-intro">
@@ -84,8 +88,9 @@
                 <p id="parag-text-intro">A Multiser é uma clínica de psicologia pensada para acolher tanto os pacientes
                     quanto os profissionais. Oferecemos um ambiente tranquilo, confortável e com
                     toda a estrutura necessária para atendimentos individuais, em grupo ou supervisões.
-                    Alugue uma das nossas salas na Multiser e faça parte da nossa equipe. 
-                    Aqui, você encontra mais do que um espaço: encontra uma rede de apoio, troca de experiências e valorização do seu trabalho.
+                    Alugue uma das nossas salas na Multiser e faça parte da nossa equipe.
+                    Aqui, você encontra mais do que um espaço: encontra uma rede de apoio, troca de experiências e
+                    valorização do seu trabalho.
                 </p><br>
 
                 <button class="button-agendar">Agendar Visita</button>
@@ -120,32 +125,32 @@
             <div id="caption-container1">
                 <h2>Agende sua avaliação:</h2>
             </div>
-                    <!--ADICIONAR EMAIL DA CLINICA E AJUSTAR REQUIRED-->
-                <form action="mailto:" id="form-location">
-                    <label for="name">Nome Completo</label>
-                    <input type="text" id="name" name="name" placeholder="Nome Completo" required> <br>
-                
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required> <br>
-                
-                    <label for="phone">Celular Pessoal</label>
-                    <input type="text" id="phone" name="phone" placeholder="(00) 00000-0000" required> <br>
-                </form>
+            <!--ADICIONAR EMAIL DA CLINICA E AJUSTAR REQUIRED-->
+            <form action="mailto:" id="form-location">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" placeholder="Nome Completo" required> <br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required> <br>
+
+                <label for="phone">Celular Pessoal</label>
+                <input type="text" id="phone" name="phone" placeholder="(00) 00000-0000" required> <br>
+            </form>
 
             <div id="button-form">
                 <button class="button-agendar">Agendar Visita</button>
             </div>
 
         </div>
-        
-            <script>
 
-            </script>
+        <script>
+
+        </script>
 
         </div>
     </section>
 
-<!--Horário de Funcionamento-->
+    <!--Horário de Funcionamento-->
 
     <article>
 
@@ -180,7 +185,7 @@
     </article>
 
 
-<!--Mais informações-->
+    <!--Mais informações-->
 
     <footer>
 
