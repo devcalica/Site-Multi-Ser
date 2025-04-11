@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Geral */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+
+
+/* Barra de Navegação */
 header {
     background-color: #6EAE9C;
     padding: 1rem;
@@ -55,6 +61,12 @@ nav img {
     color: #f0f0f0;
 }
 
+
+
+
+
+
+
 /* Botão de Acessibilidade */
 .botao-acessibilidade {
     position: fixed;
@@ -67,7 +79,7 @@ nav img {
     border-radius: 50%;
     cursor: pointer;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
@@ -78,4 +90,43 @@ nav img {
 
 .botao-acessibilidade i {
     font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+/*Página de Locação*/
+
+.location-intro {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 500px;
+}
+
+h2 {
+    color: #4a8b7a;
+}
+
+p {
+    color: black;
+}
+
+
+#img-intro {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    gap: 5px;
+    padding: 20px;
+}
+
+
+#text-intro {
+    max-width: 600px;
+    padding: 60px;
 }
