@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
-    <title>Document</title>
+    <title>Multi Ser</title>
 </head>
 
 <body>
     <!-- Barra de Navegação -->
     <header>
         <nav>
-            <img src="img/logo_verde-removebg-preview (1).png" alt="logo Multi Ser">
+            <img src="/img/logo_verde-removebg-preview (1).png" alt="logo Multi Ser">
             <ul class="links">
                 <a href="index.html">
                     <li>Home</li>
@@ -27,7 +27,7 @@
                     <li>Locação</li>
                 </a>
             </ul>
-            <ul class="icons">
+            <ul class="icons a">
                 <a href="https://www.facebook.com" target="_blank">
                     <li><i class="fab fa-facebook"></i></li>
                 </a>
@@ -41,29 +41,29 @@
     <!-- Botão de Acessibilidade -->
     <button class="botao-acessibilidade" title="Acessibilidade" aria-label="Botão de acessibilidade">
         <i class="fas fa-universal-access"></i>
-    </button>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const botaoAcessibilidade = document.querySelector('.botao-acessibilidade');
-            const body = document.body;
-
-            botaoAcessibilidade.addEventListener('click', function () {
-                // Alterna entre fonte normal e maior
-                body.classList.toggle('fonte-maior');
-
-                // Alterna entre contraste normal e alto
-                body.classList.toggle('contraste-alto');
-
-                // Atualiza o título do botão para indicar o estado atual
-                if (body.classList.contains('fonte-maior') || body.classList.contains('contraste-alto')) {
-                    botaoAcessibilidade.setAttribute('title', 'Desativar recursos de acessibilidade');
-                } else {
-                    botaoAcessibilidade.setAttribute('title', 'Ativar recursos de acessibilidade');
-                }
-            });
+      </button>
+    
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const botaoAcessibilidade = document.querySelector('.botao-acessibilidade');
+          const body = document.body;
+          
+          botaoAcessibilidade.addEventListener('click', function() {
+            // Alterna entre fonte normal e maior
+            body.classList.toggle('fonte-maior');
+            
+            // Alterna entre contraste normal e alto
+            body.classList.toggle('contraste-alto');
+            
+            // Atualiza o título do botão para indicar o estado atual
+            if (body.classList.contains('fonte-maior') || body.classList.contains('contraste-alto')) {
+              botaoAcessibilidade.setAttribute('title', 'Desativar recursos de acessibilidade');
+            } else {
+              botaoAcessibilidade.setAttribute('title', 'Ativar recursos de acessibilidade');
+            }
+          });
         });
-    </script>
+      </script>
 
 
 
@@ -71,16 +71,22 @@
 
     <section>
 
-        <img src="" alt="Imagem1">
-        <img src="" alt="Imagem2">
-        <img src="" alt="Imagem3">
+        <div class="location-intro">
+            <div id="img-intro">
+                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Imagem1">
+                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Imagem2">
+                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Imagem3">
+            </div>
 
-        <h1>Alugue uma das nossas salas e faça parte da equipe Multi Ser</h1>
-        <p>jskçjkrj fwrfwf j wçef wrfwrjfçqiuwewjkfw hajiwhu weflhjw fwah flkwah
-            jlewrjhlfehrfdfla w wfterfhlwhf hjrfweahflw rfejkwh fwaf waf</p>
+            <div id="text-intro">
+                <h2>Alugue uma das nossas salas e faça parte da equipe Multi Ser</h2>
+                <p>jskçjkrj fwrfwf j wçef wrfwrjfçqiuwewjkfw hajiwhu weflhjw fwah flkwah
+                    jlewrjhlfehrfdfla w wfterfhlwhf hjrfweahflw rfejkwh fwaf waf</p>
 
-        <button onclick="()">Agendar Visita</button>
+                <button onclick="">Agendar Visita</button>
+            </div>
 
+        </div>
 
         <script>
 
@@ -93,41 +99,110 @@
 
     <section>
 
-
-        <img src="" alt="texto">
-        <img src="" alt="tabela">
-
+        <div id="img-tabela">
+            <img src="" alt="texto">
+            <img src="" alt="tabela">
+        </div>
 
     </section>
 
 
     <!-- Agendamento -->
 
-    <div class="container">
+    <section>
+        <div class="container1">
 
-        <div id="Legenda">
-            <h1>Agende sua avaliação:</h1>
+            <div id="caption-container1">
+                <h2>Agende sua avaliação:</h2>
+            </div>
+
+            <div id="form-location">
+                <form action="">
+
+                    <label for="name">Nome Completo</label>
+                    <input type="text" placeholder="Nome Completo">
+
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="exemplo@exemplo.com">
+
+                    <label for="name">Celular Pessoal</label>
+                    <input type="number" placeholder="(00) 00000-0000">
+
+                </form>
+
+            </div>
+
+            <div id="button-form">
+                <button onclick="">Agendar Visita</button>
+            </div>
+
+            <script>
+
+            </script>
+
         </div>
+    </section>
 
-        <div id="Formulario-">
-            <form action="">
-            <label for="nome">Nome Completo</label>
-            <input type="text">
-            </form>
-           
+
+
+    <article>
+
+        <div class="container2">
+
+            <div id="text-container2">
+                <h2>Horário de Funcionamento</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                    tenetur sint in illum eveniet quam ullam beatae assumenda ducimus animi
+                    deserunt nulla obcaecati, molestiae aperiam voluptates, consectetur magni maxime. Autem.</p>
+
+                <h2>Onde Ficamos:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+                    tenetur sint in illum eveniet quam ullam beatae assumenda ducimus animi
+                    deserunt nulla obcaecati, molestiae aperiam voluptates, consectetur magni maxime. Autem.</p>
+
+                <button type="submit">Agendar Visita</button>
+            </div>
+
+            <div id="map-container2">
+                <img src="" alt="Mapa">
+            </div>
+
         </div>
-
-        <button onclick="()">Agendar Visita</button>
 
 
         <script>
 
         </script>
 
-    </div>
+
+    </article>
+
+
 
 
     <footer>
+
+        <div class="footer">
+            <div id="logo-multiser-footer">
+                <img src="img/logo_verde-removebg-preview (1).png" alt="logo Multi Ser">
+            </div>
+
+            <div id="text-footer">
+                <h2>Todos os direitos reservados à nós.</h2>
+            </div>
+
+            <div id="icons-footer">
+                <ul class="icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <li><i class="fab fa-facebook"></i></li>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <li><i class="fab fa-instagram"></i></li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
 
     </footer>
 
