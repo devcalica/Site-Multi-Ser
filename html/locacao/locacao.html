@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/loca.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="/javascript/locacao.js"></script>
     <title>Locação</title>
 </head>
 
@@ -77,25 +78,25 @@
 
         <div class="location-intro">
             <div id="img-intro">
-                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
-                    alt="Imagem1">
-                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
-                    alt="Imagem2">
-                <img src="https://th.bing.com/th/id/R.02e26ad3a8f3bd1f353f6ab05afb4d5c?rik=e4ReygjeiBPslA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fBb7ltI57Nc%2fVh2T9_tTK5I%2fAAAAAAAAAA4%2foJs0IIllbjk%2fs1600%2fpsicolgoia.jpg&ehk=gLHo1hPdnfdPaNVtm9X0UqRtayujLKyy96cCGrG1foI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
-                    alt="Imagem3">
+                <img id="img1" src="/img/sala2.jpg">
+                <img id="img2" src="/img/sala1.jpg">
+                <img id="img3" src="/img/sala3.jpg" alt="Imagem3">
             </div>
 
             <div id="text-intro">
-                <h2>Alugue uma das nossas salas <br> e faça parte da equipe Multi Ser</h2><br>
+                <h2 id="title-intro">Alugue uma das nossas salas <br> e faça parte da equipe Multi Ser</h2>
                 <p id="parag-text-intro">A Multiser é uma clínica de psicologia pensada para acolher tanto os pacientes
                     quanto os profissionais. Oferecemos um ambiente tranquilo, confortável e com
                     toda a estrutura necessária para atendimentos individuais, em grupo ou supervisões.
                     Alugue uma das nossas salas na Multiser e faça parte da nossa equipe.
-                    Aqui, você encontra mais do que um espaço: encontra uma rede de apoio, troca de experiências e
+                    Pois, aqui você pode encontrar mais do que um espaço: encontra uma rede de apoio, troca de
+                    experiências e
                     valorização do seu trabalho.
                 </p><br>
 
-                <button class="button-agendar">Agendar Visita</button>
+                <div class="button-agendar">
+                    <button id="button-agendar">Agendar Visita</button>
+                </div>
             </div>
 
         </div>
@@ -121,35 +122,40 @@
 
     <!-- Agendamento -->
 
-    <section>
+    <section class="section-form">
         <div class="container1">
 
-            <div id="caption-container1">
-                <h2>Agende sua avaliação:</h2>
-            </div>
-            <!--ADICIONAR EMAIL DA CLINICA E AJUSTAR REQUIRED-->
-            <form action="mailto:" id="form-location">
+
+            <form action="/javascript/locacao.js" id="form-location">
+
+                <div id="caption-container1">
+                    <h2 id="caption-container1">Entre em Contato</h2>
+                </div>
+
                 <label for="name">Nome Completo</label>
-                <input type="text" id="name" name="name" placeholder="Nome Completo" required> <br>
+                <input type="text" id="name-form" name="name" placeholder="Nome Completo" required> <br>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required> <br>
+                <input type="email" id="email-form" name="email" placeholder="exemplo@exemplo.com" required> <br>
 
                 <label for="phone">Celular Pessoal</label>
-                <input type="text" id="phone" name="phone" placeholder="(00) 00000-0000" required> <br>
+                <input type="text" id="number-form" name="phone" placeholder="(00) 00000-0000" required> <br>
+
+                <label for="name">Data</label>
+                <input type="datetime-local" id="date-form" name="date-form" placeholder="Date" min="2025-04-24T09:00"
+                    max="2025-04-30T16:00" required> <br>
+
+                <label for="name">Observações</label>
+                <input type="text" id="obs-form" name="obs-form" placeholder="Observações" required> <br>
+
+                <div class="button-form">
+                    <button type="submit" id="button-form">Agendar Visita </button>
+                </div>
+
             </form>
 
-            <div id="button-form">
-                <button class="button-agendar">Agendar Visita</button>
-            </div>
-
         </div>
 
-        <script>
-
-        </script>
-
-        </div>
     </section>
 
     <!--Horário de Funcionamento-->
@@ -160,28 +166,24 @@
 
             <div id="text-container2">
                 <h2>Horário de Funcionamento</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                    tenetur sint in illum eveniet quam ullam beatae assumenda ducimus animi
-                    deserunt nulla obcaecati, molestiae aperiam voluptates, consectetur magni maxime. Autem.</p>
+                <p>08h00 às 21h00 <br> Necessário agendar horário através do formulário.</p>
 
-                <h2>Onde Ficamos:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-                    tenetur sint in illum eveniet quam ullam beatae assumenda ducimus animi
-                    deserunt nulla obcaecati, molestiae aperiam voluptates, consectetur magni maxime. Autem.</p>
+                <h2>Localização</h2>
+                <p>Localizado em "Salvador Trade Center", Torre norte - Av. Trancedo Neves, 1632 - sala 510 - Caminho das Árvores, Salvador - BA, 40301-155.</p>
 
-                <button class="button-agendar">Agendar Visita</button>
+                
             </div>
 
             <div id="map-container2">
-                <img src="" alt="Mapa">
+                <img id="img-container2" src="/img/locali1.jpg" alt="Mapa">
+
+                <div class="button-locali">
+                    <button id="button-locali">Agendar Visita</button>
+                </div>
+
             </div>
 
         </div>
-
-
-        <script>
-
-        </script>
 
 
     </article>
@@ -193,11 +195,11 @@
 
         <div class="footer">
             <div id="logo-multiser-footer">
-                <img src="img/logo_verde-removebg-preview (1).png" alt="logo Multi Ser">
+                <img id="img-footer" src="/img/logo_verde-removebg-preview (1).png" alt="logo Multi Ser">
             </div>
 
             <div id="text-footer">
-                <h2>Todos os direitos reservados à nós.</h2>
+                <h2 id="title-footer">Todos os direitos reservados a nós.</h2>
             </div>
 
             <div id="icons-footer">
