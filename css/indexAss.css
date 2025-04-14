@@ -1,4 +1,59 @@
-.banner{
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+
+.banner {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    min-height: calc(100vh - 82px); /* Altura total da viewport menos a altura do header */
+    position: relative;
+}
+
+.banner img {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.principal {
+    width: 55%;
+    color: white;
+    padding: 2rem;
+    margin-right: 2rem;
+}
+
+.principal h1 {
+    font-family: 'Baloo 2';
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    color: #6EAE9C;
+}
+
+.principal p {
+    font-family: 'Baloo 2';
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+}
+
+.principal button {
+    background-color: #6EAE9C;
+    color: #1E1E1E;
+    border: none;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    letter-spacing: 0.05em;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.principal button:hover {
+    background-color: #3b6d60;
+    color: #fffd83;
+    transition: 0.5s;
 }
