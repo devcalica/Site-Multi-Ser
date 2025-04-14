@@ -1,4 +1,3 @@
-/*Página de Locação*/
 /*Introdução*/
 .location-intro {
     display: flex;
@@ -11,10 +10,6 @@
 h2 {
     color: #4a8b7a;
     font-size: 20px;
-}
-
-p {
-    color: black;
 }
 
 
@@ -40,7 +35,7 @@ p {
     border-radius: 8px;
     border-color: #4a8b7a;
     box-shadow: 0 5px 15px #4a8b7a;
-    
+
 }
 
 #title-intro {
@@ -85,17 +80,17 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 50px;
-    border-radius: 10px;
+    gap: 40px;
+    margin-top: 40px;
 }
 
 #img-tab-dif {
     display: flex;
     justify-content: center;
-    border-radius: 10px;
-    width: 900px;
-    height: 200px;
-    margin-left: 300px;
+    border-radius: 8px;
+    width: 1000px;
+    height: 300px;
+    margin-left: 200px;
 }
 
 
