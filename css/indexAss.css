@@ -60,7 +60,7 @@
 
 /* Seção Psicologia */
 .psicologia {
-    padding: 4rem 2rem;
+    padding: 10rem 2rem 2rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -134,4 +134,48 @@
 .botao-circular.ativo {
     background-color: #fffd83;
     transform: scale(1.2);
+}
+
+/* Seção Nutrição */
+.nutricao {
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.nutricao h1 {
+    color: #6EAE9C;
+    font-family: 'Baloo 2';
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.nutricao-conteudo {
+    display: none;
+    width: 100%;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nutricao-conteudo.ativo {
+    display: flex;
+}
+
+.nutricao-conteudo img {
+    width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.nutricao-conteudo p {
+    flex: 1;
+    color: white;
+    font-family: 'Baloo 2';
+    font-size: 1.7rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
 }
