@@ -6,6 +6,45 @@
     box-sizing: border-box;
 }
 
+.agendamento-particular{
+ text-align: center;
+ position: absolute;
+ right: 30px;
+ top: 300px;
+ transform: translateY(-50%);
+ padding: 40px;
+ width: 400px;
+ box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.3);
+ font-family: 'Poppins', sans-serif;
+ color: #000000;
+}
+
+.cadastro{
+  display: flex;
+  margin: 15px;
+}
+
+.como-funciona{
+  display: flex;
+  margin: 15px;
+ 
+}
+
+.lista-espera{
+  display: flexbox;
+  margin: 15px;
+}
+
+.publico{
+ position: absolute;
+ right: 500px;
+ top: 250px;
+ transform: translateY(-50%);
+ padding: 10px;
+ width: 400px;
+ font-family: 'Poppins', sans-serif;
+ color: #000000;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -13,6 +52,7 @@ body{
     color: #000000;
     padding: 8px;
 } 
+
 
 /*FORMULÁRIO*/
 
@@ -67,3 +107,20 @@ footer {
     font-size: 20px;
   }
   
+   /* Responsividade */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #text-footer {
+      margin: 10px 0;
+    }
+  
+    #icons-footer ul {
+      justify-content: center;
+    }
+  }
+
