@@ -1,0 +1,69 @@
+/* ALINHAMENTO DA LATERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 8px;
+} 
+
+/*FORMULÁRIO*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: rgba(76, 74, 74, 0.2);
+    padding: 20px;
+}
+
+/* BARRA FINAL DA PÁGINA */
+
+/* Serve para colocar a barra final */
+footer {
+    background-color: #a0dac9;
+    color: white;
+    padding: 2rem;
+    margin-top: 40px;
+    font-size: 10px;
+  }
+  
+  /* Ajusta todos os ícones da barra final */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+  }
+  
+  /* Ajusta o tamanho da logo */
+  #logo-multiser-footer img {
+    height: 50px;
+  }
+
+  /* Ajusta a frase do meio */
+  #text-footer h2{
+    font-size: 10px;
+    font-weight: 900;
+    height: 0px;
+  }
+
+   /* Ajusta a cor dos ícones */
+  #icons-footer a {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Ajusta o tamanho dos ícones */
+  #icons-footer i {
+    font-size: 20px;
+  }
+  
