@@ -138,12 +138,11 @@
 
 /* Seção Nutrição */
 .nutricao {
-    padding: 2rem;
-    min-height: 100vh;
+    padding: 2rem 2rem 2rem;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
 .nutricao h1 {
@@ -178,4 +177,98 @@
     font-size: 1.7rem;
     line-height: 1.6;
     letter-spacing: 0.05em;
+}
+
+/* Seção Avaliações */
+.avaliacoes {
+    padding: 2rem 2rem 2rem;
+    min-height: 60vh;
+}
+
+.avaliacoes h1 {
+    color: #6EAE9C;
+    font-family: 'Baloo 2';
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.container-avaliacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper-avaliacoes {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide-avaliacoes {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.card-avaliacao {
+    min-width: calc((100% - 4rem) / 3);
+    background-color: #2A2A2A;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-cliente {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.perfil-cliente img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil-cliente h3 {
+    color: white;
+    font-family: 'Baloo 2';
+    font-size: 1.2rem;
+}
+
+.card-avaliacao p {
+    color: white;
+    font-family: 'Baloo 2';
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.nav-btn {
+    background-color: #6EAE9C;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #3b6d60;
+    transform: scale(1.1);
+}
+
+.nav-btn.hidden {
+    visibility: hidden;
+    opacity: 0;
 }
