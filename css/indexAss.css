@@ -265,6 +265,7 @@
 
 .nav-btn:hover {
     background-color: #3b6d60;
+    color: #fffd83;
     transform: scale(1.1);
 }
 
