@@ -57,3 +57,81 @@
     color: #fffd83;
     transition: 0.5s;
 }
+
+/* Seção Psicologia */
+.psicologia {
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.psicologia h1 {
+    color: #6EAE9C;
+    font-family: 'Baloo 2';
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.conteudo-dinamico {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.psicologia-conteudo {
+    display: none;
+    width: 100%;
+    align-items: center;
+    gap: 4rem;
+}
+
+.psicologia-conteudo.ativo {
+    display: flex;
+}
+
+.psicologia-conteudo img {
+    width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.psicologia-conteudo p {
+    flex: 1;
+    color: white;
+    font-family: 'Baloo 2';
+    font-size: 1.7rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+}
+
+.botoes-navegacao {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.botao-circular {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: #6EAE9C;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao-circular:hover {
+    transform: scale(1.2);
+}
+
+.botao-circular.ativo {
+    background-color: #fffd83;
+    transform: scale(1.2);
+}
