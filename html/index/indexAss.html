@@ -219,23 +219,7 @@
   <script src="../../js/psicologia.js"></script>
   <script src="../../js/nutricao.js"></script>
   <script src="../../js/avaliacoes.js"></script>
-  <script>
-    const menuHamburguer = document.querySelector('.menu-hamburguer');
-    const menuContainer = document.querySelector('.menu-container');
-    const menuLinks = document.querySelectorAll('.menu-container a');
-
-    menuHamburguer.addEventListener('click', () => {
-      menuHamburguer.classList.toggle('ativo');
-      menuContainer.classList.toggle('ativo');
-    });
-
-    menuLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        menuHamburguer.classList.remove('ativo');
-        menuContainer.classList.remove('ativo');
-      });
-    });
-  </script>
+  <script src="../../js/nav.js"></script>
 </body>
 
 </html>

@@ -172,3 +172,127 @@ footer {
     font-size: 0.9rem;
     font-family: 'Baloo 2';
 }
+
+/* Menu Hambúrguer */
+.menu-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-hamburguer span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #6EAE9C;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Media Queries Globais */
+@media (max-width: 768px) {
+    /* Header e Navegação */
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu-container {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #1E3B35;
+        padding: 80px 2rem 2rem;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .menu-container.ativo {
+        right: 0;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    nav img {
+        height: 40px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    .links a {
+        margin: 1rem 0;
+    }
+
+    .icons {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    /* Menu Hambúrguer Ativo */
+    .menu-hamburguer.ativo span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .menu-hamburguer.ativo span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-hamburguer.ativo span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* Footer Responsivo */
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-column ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media Query para telas muito pequenas */
+@media (max-width: 480px) {
+    nav {
+        padding: 0.5rem 1rem;
+    }
+
+    .menu-container {
+        width: 85%;
+    }
+}
