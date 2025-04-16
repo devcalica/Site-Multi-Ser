@@ -1,3 +1,25 @@
+//BOTÃO DE ACESSIBILIDADE//
+
+ document.addEventListener('DOMContentLoaded', function () {
+            const botaoAcessibilidade = document.querySelector('.botao-acessibilidade');
+            const body = document.body;
+
+            botaoAcessibilidade.addEventListener('click', function () {
+                // Alterna entre fonte normal e maior
+                body.classList.toggle('fonte-maior');
+
+                // Alterna entre contraste normal e alto
+                body.classList.toggle('contraste-alto');
+
+                // Atualiza o título do botão para indicar o estado atual
+                if (body.classList.contains('fonte-maior') || body.classList.contains('contraste-alto')) {
+                    botaoAcessibilidade.setAttribute('title', 'Desativar recursos de acessibilidade');
+                } else {
+                    botaoAcessibilidade.setAttribute('title', 'Ativar recursos de acessibilidade');
+                }
+            });
+        });
+
 //ENVIO DO FORMULÁRIO//
 
 document.addEventListener("DOMContentLoaded", function() {
