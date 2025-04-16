@@ -314,68 +314,213 @@ p, .avaliacoes .slide-avaliacoes .card-avaliacao p, .localizacao .container-loca
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
-footer {
-    background-color: #1E3B35;
-    padding: 4rem 2rem 1rem;
-    color: white;
-}
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 4rem;
-}
-
-.footer-logo img {
-    height: 80px;
-}
-
-.footer-links {
-    display: flex;
-    gap: 6rem;
-}
-
-.footer-column h3 {
-    color: #6EAE9C;
-    font-family: 'Baloo 2';
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.footer-column ul {
-    list-style: none;
+/* Menu Hambúrguer */
+.menu-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
     padding: 0;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    z-index: 1001;
 }
 
-.footer-column ul li {
-    margin-bottom: 0.5rem;
+.menu-hamburguer span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #6EAE9C;
+    margin: 5px 0;
+    transition: all 0.3s ease;
 }
 
-.footer-column ul li a {
-    color: #A5A5A5;
-    text-decoration: none;
-    font-family: 'Baloo 2';
-    font-size: 1rem;
-    transition: color 0.3s ease;
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+    /* Header e Navegação */
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu-container {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #1E3B35;
+        padding: 80px 2rem 2rem;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .menu-container.ativo {
+        right: 0;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    nav img {
+        height: 40px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    .links a {
+        margin: 1rem 0;
+    }
+
+    .icons {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    /* Menu Hambúrguer Ativo */
+    .menu-hamburguer.ativo span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .menu-hamburguer.ativo span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-hamburguer.ativo span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* Banner */
+    .banner {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .principal {
+        width: 100%;
+        padding: 2rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p, .avaliacoes .slide-avaliacoes .card-avaliacao p, .localizacao .container-localizacao p {
+        font-size: 1.2rem;
+    }
+
+    /* Seções Psicologia e Nutrição */
+    .psicologia, .nutricao {
+        padding: 4rem 1rem;
+    }
+
+    .psicologia-conteudo, .nutricao-conteudo {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .psicologia-conteudo img, .nutricao-conteudo img {
+        width: 100%;
+    }
+
+    .psicologia-conteudo p, .nutricao-conteudo p {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Seção Avaliações */
+    .container-avaliacoes {
+        padding: 0 1rem;
+    }
+
+    .nav-btn {
+        display: none; /* Esconde as setas em mobile */
+    }
+
+    .card-avaliacao {
+        min-width: 100%;
+        margin-right: 1rem;
+    }
+
+    /* Seção Localização */
+    .localizacao {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .container-localizacao {
+        padding: 0;
+        text-align: center;
+    }
+
+    .container-mapa {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-column ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.footer-column ul li a:hover {
-    color: #6EAE9C;
-}
+/* Media Query para ajustes em telas muito pequenas */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
 
-.footer-bottom {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid #2a4d45;
-    text-align: center;
-}
+    .principal button {
+        width: 100%;
+        padding: 1rem;
+    }
 
-.footer-bottom p {
-    color: #A5A5A5;
-    font-size: 0.9rem;
-    font-family: 'Baloo 2';
+    .botao-circular {
+        width: 15px;
+        height: 15px;
+    }
+
+    .card-avaliacao {
+        padding: 1rem;
+    }
 }

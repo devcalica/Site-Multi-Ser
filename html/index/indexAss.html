@@ -14,28 +14,37 @@
   <header>
     <nav>
       <img src="../../img/logo_verde-removebg-preview (1).png" alt="logo Multi Ser">
-      <ul class="links">
-        <a href="indexAss.html">
-          <li>Home</li>
-        </a>
-        <a href="../sobreNos/sobreNosAss.html">
-          <li>Sobre nós</li>
-        </a>
-        <a href="../clinicaSocial/clinicaSocialAss.html">
-          <li>Clinica social</li>
-        </a>
-        <a href="../locacao/locacaoAss.html">
-          <li>Locação</li>
-        </a>
-      </ul>
-      <ul class="icons">
-        <a href="https://web.facebook.com/multiser.clinica/ " target="_blank">
-          <li><i class="fab fa-facebook"></i></li>
-        </a>
-        <a href="https://www.instagram.com/multiser.clinica/" target="_blank">
-          <li><i class="fab fa-instagram"></i></li>
-        </a>
-      </ul>
+      
+      <button class="menu-hamburguer" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="menu-container">
+        <ul class="links">
+          <a href="indexAss.html">
+            <li>Home</li>
+          </a>
+          <a href="../sobreNos/sobreNosAss.html">
+            <li>Sobre nós</li>
+          </a>
+          <a href="../clinicaSocial/clinicaSocialAss.html">
+            <li>Clinica social</li>
+          </a>
+          <a href="../locacao/locacaoAss.html">
+            <li>Locação</li>
+          </a>
+        </ul>
+        <ul class="icons">
+          <a href="https://web.facebook.com/multiser.clinica/ " target="_blank">
+            <li><i class="fab fa-facebook"></i></li>
+          </a>
+          <a href="https://www.instagram.com/multiser.clinica/" target="_blank">
+            <li><i class="fab fa-instagram"></i></li>
+          </a>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -178,7 +187,7 @@
   <footer>
     <div class="footer-content">
       <div class="footer-logo">
-        <img src="../../img/logo_verde-removebg-preview (1).png" alt="logo Multi Ser">
+        <img src="/img/logo_verde-removebg-preview (1).png" alt="logo Multi Ser">
       </div>
       
       <div class="footer-links">
@@ -195,8 +204,8 @@
           <h3>Fale conosco</h3>
           <ul>
             <li><a href="https://api.whatsapp.com/message/SJ2YGAQGFDK7G1?autoload=1&app_absent=0&utm_source=heylink.me" target="_blank">Agendar consulta</a></li>
-            <li><a href="../clinicaSocial/clinicaSocialAss.html">Clínica social</a></li>
-            <li><a href="../locacao/locacaoAss.html">Alugue uma sala</a></li>
+            <li><a href="/html/clinicaSocial/clinicaSocialAss.html">Clínica social</a></li>
+            <li><a href="/html/locacao/locacaoAss.html">Alugue uma sala</a></li>
           </ul>
         </div>
       </div>
@@ -210,6 +219,23 @@
   <script src="../../js/psicologia.js"></script>
   <script src="../../js/nutricao.js"></script>
   <script src="../../js/avaliacoes.js"></script>
+  <script>
+    const menuHamburguer = document.querySelector('.menu-hamburguer');
+    const menuContainer = document.querySelector('.menu-container');
+    const menuLinks = document.querySelectorAll('.menu-container a');
+
+    menuHamburguer.addEventListener('click', () => {
+      menuHamburguer.classList.toggle('ativo');
+      menuContainer.classList.toggle('ativo');
+    });
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuHamburguer.classList.remove('ativo');
+        menuContainer.classList.remove('ativo');
+      });
+    });
+  </script>
 </body>
 
 </html>

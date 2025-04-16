@@ -40,10 +40,19 @@ nav img {
     height: 60px;
 }
 
+.menu-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
 .links {
     display: flex;
     gap: 2rem;
     list-style: none;
+    margin: 0 auto;
 }
 
 .links a {
@@ -96,4 +105,70 @@ nav img {
 
 .botao-acessibilidade i {
     font-size: 2.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1E3B35;
+    padding: 4rem 2rem 1rem;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.footer-logo img {
+    height: 80px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 6rem;
+}
+
+.footer-column h3 {
+    color: #6EAE9C;
+    font-family: 'Baloo 2';
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: #A5A5A5;
+    text-decoration: none;
+    font-family: 'Baloo 2';
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #6EAE9C;
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #2a4d45;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #A5A5A5;
+    font-size: 0.9rem;
+    font-family: 'Baloo 2';
 }
