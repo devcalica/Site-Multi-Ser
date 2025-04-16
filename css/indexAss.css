@@ -118,8 +118,8 @@
 }
 
 .botao-circular {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: none;
     background-color: #6EAE9C;
@@ -133,7 +133,7 @@
 
 .botao-circular.ativo {
     background-color: #fffd83;
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 /* Seção Nutrição */
@@ -253,8 +253,8 @@
     background-color: #6EAE9C;
     color: white;
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
