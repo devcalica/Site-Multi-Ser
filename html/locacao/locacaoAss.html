@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../../css/styleAss.css">
+  <link rel="stylesheet" href="/css/locaAss.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
@@ -20,28 +21,28 @@
         <span></span>
       </button>
 
-      <div class="menu-container">  
-      <ul class="links">
-        <a href="/html/index/indexAss.html">
-          <li>Home</li>
-        </a>
-        <a href="/html/sobreNos/sobreNosAss.html">
-          <li>Sobre nós</li>
-        </a>
-        <a href="/html/clinicaSocial/clinicaSocialAss.html">
-          <li>Clinica social</li>
-        </a>
-        <a href="locacaoAss.html">
-          <li>Locação</li>
-        </a>
-      </ul>
-      <ul class="icons">
-        <a href="https://web.facebook.com/multiser.clinica/ " target="_blank">
-          <li><i class="fab fa-facebook"></i></li>
-        </a>
-        <a href="https://www.instagram.com/multiser.clinica/" target="_blank">
-          <li><i class="fab fa-instagram"></i></li>
-        </a>
+      <div class="menu-container">
+        <ul class="links">
+          <a href="/html/index/indexAss.html">
+            <li>Home</li>
+          </a>
+          <a href="/html/sobreNos/sobreNosAss.html">
+            <li>Sobre nós</li>
+          </a>
+          <a href="/html/clinicaSocial/clinicaSocialAss.html">
+            <li>Clinica social</li>
+          </a>
+          <a href="locacaoAss.html">
+            <li>Locação</li>
+          </a>
+        </ul>
+        <ul class="icons">
+          <a href="https://web.facebook.com/multiser.clinica/ " target="_blank">
+            <li><i class="fab fa-facebook"></i></li>
+          </a>
+          <a href="https://www.instagram.com/multiser.clinica/" target="_blank">
+            <li><i class="fab fa-instagram"></i></li>
+          </a>
         </ul>
       </div>
     </nav>
@@ -53,27 +54,59 @@
       <i class="fas fa-universal-access"></i>
     </button>
   </a>
-  
+
+  <main class="container-locacao">
+    <section class="carrosel-locacao">
+      <div class="slide-locacao ativo">
+        <img src="/img/locacao-1.jpg" alt="Imagem da locação 1">
+      </div>
+      <div class="slide-locacao">
+        <img src="/img/locacao-2.jpg" alt="Imagem da locação 2">
+      </div>
+      <div class="slide-locacao">
+        <img src="/img/locacao-3.jpg" alt="Imagem da locação 3">
+      </div>
+      <div class="navegacao-carrosel">
+        <button class="nav-btn-carrosel prev-btn" aria-label="Imagem anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nav-btn-carrosel next-btn" aria-label="Próxima imagem">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="conteudo-locacao">
+      <h1>Alugue uma das nossas salas e faça parte da equipe Multi Ser</h1>
+      <p>A Multiser é uma clínica de psicologia pensada para acolher tanto os pacientes quanto os profissionais. Oferecemos um ambiente tranquilo, confortável e com toda a estrutura necessária para atendimentos individuais, em grupo ou supervisões. Alugue uma das nossas salas na Multiser e faça parte da nossa equipe. Pois, aqui você pode encontrar mais do que um espaço: encontra uma rede de apoio, troca de experiências e valorização do seu trabalho.</p>
+      <a href="https://api.whatsapp.com/message/SJ2YGAQGFDK7G1?autoload=1&app_absent=0&utm_source=heylink.me" target="_blank">
+        <button class="botao-agendamento">Agendar uma visita</button>
+      </a>
+    </section>
+  </main>
+
   <footer>
     <div class="footer-content">
       <div class="footer-logo">
         <img src="/img/logo_verde-removebg-preview (1).png" alt="logo Multi Ser">
       </div>
-      
+
       <div class="footer-links">
         <div class="footer-column">
           <h3>Redes sociais</h3>
           <ul>
-            <li><a href="https://api.whatsapp.com/message/SJ2YGAQGFDK7G1?autoload=1&app_absent=0&utm_source=heylink.me" target="_blank">WhatsApp</a></li>
+            <li><a href="https://api.whatsapp.com/message/SJ2YGAQGFDK7G1?autoload=1&app_absent=0&utm_source=heylink.me"
+                target="_blank">WhatsApp</a></li>
             <li><a href="https://www.instagram.com/multiser.clinica/" target="_blank">Instagram</a></li>
             <li><a href="https://web.facebook.com/multiser.clinica/" target="_blank">Facebook</a></li>
           </ul>
         </div>
-        
+
         <div class="footer-column">
           <h3>Fale conosco</h3>
           <ul>
-            <li><a href="https://api.whatsapp.com/message/SJ2YGAQGFDK7G1?autoload=1&app_absent=0&utm_source=heylink.me" target="_blank">Agendar consulta</a></li>
+            <li><a href="https://api.whatsapp.com/message/SJ2YGAQGFDK7G1?autoload=1&app_absent=0&utm_source=heylink.me"
+                target="_blank">Agendar consulta</a></li>
             <li><a href="/html/clinicaSocial/clinicaSocialAss.html">Clínica social</a></li>
             <li><a href="/html/locacao/locacaoAss.html">Alugue uma sala</a></li>
           </ul>
@@ -87,6 +120,7 @@
 
   <!-- Scripts -->
   <script src="../../js/nav.js"></script>
+  <script src="../../js/locacao.js"></script>
 </body>
 
 </html>

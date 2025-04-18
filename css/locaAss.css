@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+
+.container-locacao {
+    max-width: 1400px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.carrosel-locacao {
+    width: 100%;
+    position: relative;
+}
+
+.slide-locacao {
+    display: none;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+}
+
+.slide-locacao.ativo {
+    display: block;
+}
+
+.slide-locacao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navegacao-carrosel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 2;
+}
+
+.nav-btn-carrosel {
+    background-color: #6EAE9C;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.nav-btn-carrosel:hover {
+    background-color: #3b6d60;
+    color: #fffd83;
+}
+
+.conteudo-locacao {
+    text-align: left;
+}
+
+.conteudo-locacao h1 {
+    margin-bottom: 1.5rem;
+}
+
+.conteudo-locacao p {
+    font-family: 'Baloo 2';
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .container-locacao {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .conteudo-locacao {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-locacao {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .slide-locacao {
+        aspect-ratio: 4/5;
+    }
+
+    .conteudo-locacao p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-btn-carrosel {
+        width: 35px;
+        height: 35px;
+    }
+}
