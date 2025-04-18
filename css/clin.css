@@ -1,5 +1,4 @@
 /* ALINHAMENTO DA LATERAL */
-
 *{
     margin: 0;
     padding: 0;
@@ -19,52 +18,53 @@
  color: #000000;
 }
 
-.cadastro{
+.cadastro-1{
   display: flex;
-  margin: 15px;
+  background-color: #6EAE9C;
+  padding: 10px;
+  border-radius: 0px;
+  margin-left: 0;
+  margin-top: 0px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
 }
 
-.como-funciona{
-  display: flex;
-  margin: 15px;
+.como-funciona-2 h4{
+  color: #ffffff;
+  margin-top: 100px;
  
 }
 
-.lista-espera{
-  display: flexbox;
-  margin: 15px;
+.lista-de-espera-3 h4{
+  color: #ffffff;
+  margin-top: 100px;
 }
 
-.publico{
- position: absolute;
- right: 500px;
- top: 250px;
- transform: translateY(-50%);
- padding: 10px;
- width: 400px;
- font-family: 'Poppins', sans-serif;
- color: #000000;
+.publico-4 h4{
+  color: #ffffff;
+  margin-top: 100px;
 }
+
 
 body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 8px;
-} 
-
+ font-family: 'Poppins', sans-serif;
+ background-size: cover;
+ padding: 0px;
+ max-width: 2000px;
+}
 
 /*FORMULÁRIO*/
 
 .container{
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 100px;
     background-color: rgba(76, 74, 74, 0.2);
-    padding: 20px;
+    padding: 30px;
 }
+
 
 /* BARRA FINAL DA PÁGINA */
 
@@ -99,7 +99,7 @@ footer {
 
    /* Ajusta a cor dos ícones */
   #icons-footer a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   
   /* Ajusta o tamanho dos ícones */
@@ -123,4 +123,3 @@ footer {
       justify-content: center;
     }
   }
-
