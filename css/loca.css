@@ -389,6 +389,7 @@ form {
     #img-intro {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         padding: 10px;
     }
