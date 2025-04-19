@@ -2,8 +2,9 @@
 
 .container-locacao {
     max-width: 1400px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+    min-height: calc(100vh - 200px);
+    margin: 0 auto;
+    padding: 4rem 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -13,18 +14,40 @@
 .carrosel-locacao {
     width: 100%;
     position: relative;
+    padding-bottom: 133%; /* Proporção 3:4 */
 }
 
 .slide-locacao {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     border-radius: 20px;
     overflow: hidden;
-    aspect-ratio: 3/4;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
 .slide-locacao.ativo {
     display: block;
+    opacity: 1;
+    z-index: 3;
+}
+
+.slide-locacao.anterior {
+    display: block;
+    opacity: 0.5;
+    transform: scale(0.9) translateX(-10%);
+    z-index: 2;
+}
+
+.slide-locacao.proximo {
+    display: block;
+    opacity: 0.5;
+    transform: scale(0.9) translateX(10%);
+    z-index: 1;
 }
 
 .slide-locacao img {
@@ -37,11 +60,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: calc(100% + 40px);
+    left: -20px;
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
-    z-index: 2;
+    z-index: 4;
+    pointer-events: none;
 }
 
 .nav-btn-carrosel {
@@ -56,19 +80,24 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    pointer-events: auto;
 }
 
 .nav-btn-carrosel:hover {
     background-color: #3b6d60;
     color: #fffd83;
+    transform: scale(1.1);
 }
 
 .conteudo-locacao {
     text-align: left;
+    max-width: 600px;
 }
 
 .conteudo-locacao h1 {
     margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #6EAE9C;
 }
 
 .conteudo-locacao p {
@@ -76,6 +105,7 @@
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 2rem;
+    color: #fff;
 }
 
 /* Media Queries */
@@ -83,25 +113,49 @@
     .container-locacao {
         grid-template-columns: 1fr;
         gap: 2rem;
+        padding: 2rem;
+    }
+
+    .carrosel-locacao {
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .conteudo-locacao {
         text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 768px) {
     .container-locacao {
-        margin: 2rem auto;
-        padding: 0 1rem;
+        padding: 1rem;
     }
 
-    .slide-locacao {
-        aspect-ratio: 4/5;
+    .carrosel-locacao {
+        padding-bottom: 150%; /* Proporção mais alta para mobile */
+    }
+
+    .conteudo-locacao h1 {
+        font-size: 2rem;
     }
 
     .conteudo-locacao p {
         font-size: 1rem;
+    }
+
+    .navegacao-carrosel {
+        width: calc(100% + 20px);
+        left: -10px;
+    }
+
+    .slide-locacao.anterior {
+        transform: scale(0.95) translateX(-5%);
+    }
+
+    .slide-locacao.proximo {
+        transform: scale(0.95) translateX(5%);
     }
 }
 
@@ -109,5 +163,9 @@
     .nav-btn-carrosel {
         width: 35px;
         height: 35px;
+    }
+
+    .conteudo-locacao h1 {
+        font-size: 1.8rem;
     }
 }
