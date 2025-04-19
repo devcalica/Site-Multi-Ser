@@ -190,6 +190,19 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.precos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.precos img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
     .container-locacao {
@@ -268,6 +281,10 @@
 
     .conteudo-banner p {
         font-size: 1rem;
+    }
+
+    .precos {
+        padding: 2rem 1rem;
     }
 }
 
