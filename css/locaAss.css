@@ -102,10 +102,52 @@
 
 .conteudo-locacao p {
     font-family: 'Baloo 2';
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.6;
     margin-bottom: 2rem;
     color: #fff;
+}
+
+.banner-locacao {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+}
+
+.conteudo-banner {
+    background-color: #15201d;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-banner h2 {
+    font-family: 'Baloo 2';
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+
+.conteudo-banner p {
+    font-family: 'Baloo 2';
+    font-size: 1.4rem;
+    line-height: 2;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.banner-locacao img {
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Media Queries */
@@ -124,6 +166,24 @@
     .conteudo-locacao {
         text-align: center;
         max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .banner-locacao {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-locacao img {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo-banner {
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    .conteudo-banner p {
         margin: 0 auto;
     }
 }
@@ -156,6 +216,18 @@
 
     .slide-locacao.proximo {
         transform: scale(0.95) translateX(5%);
+    }
+
+    .conteudo-banner {
+        padding: 2rem 1rem;
+    }
+
+    .conteudo-banner h2 {
+        font-size: 2rem;
+    }
+
+    .conteudo-banner p {
+        font-size: 1rem;
     }
 }
 
