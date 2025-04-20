@@ -164,8 +164,9 @@ footer {
 .footer-column h3 {
     color: #6EAE9C;
     font-family: 'Baloo 2';
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
 }
 
 .footer-column ul {
@@ -178,11 +179,12 @@ footer {
 }
 
 .footer-column ul li a {
-    color: #A5A5A5;
+    color: #ffffff;
     text-decoration: none;
     font-family: 'Baloo 2';
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
+    letter-spacing: 0.05em;
 }
 
 .footer-column ul li a:hover {
@@ -197,9 +199,10 @@ footer {
 }
 
 .footer-bottom p {
-    color: #A5A5A5;
-    font-size: 0.9rem;
+    color: #ffffff;
+    font-size: 1.1rem;
     font-family: 'Baloo 2';
+    letter-spacing: 0.05em;
 }
 
 /* Menu Hambúrguer */
