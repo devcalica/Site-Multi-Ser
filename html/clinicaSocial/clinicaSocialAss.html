@@ -85,6 +85,113 @@
     </div>
   </section>
 
+  <section class="formulario-social">
+    <div class="container-formulario">
+      <h2>Formulário de Inscrição para Clínica Social</h2>
+      
+      <form id="form-social" onsubmit="return validarFormulario(event)">
+        <div class="campo-form">
+          <label for="email">E-mail*</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </div>
+
+        <div class="campo-form">
+          <label for="nome">Nome Completo*</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <div class="campo-form">
+          <label for="idade">Idade*</label>
+          <input type="number" id="idade" name="idade" min="0" max="120" placeholder="Digite sua idade" required>
+        </div>
+
+        <div class="campo-form" id="campo-responsavel" style="display: none;">
+          <label for="responsavel">Nome do Responsável*</label>
+          <input type="text" id="responsavel" name="responsavel" placeholder="Digite o nome do responsável">
+        </div>
+
+        <div class="campo-form">
+          <label for="cidade">Cidade/Estado*</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Ex: Salvador/BA" required>
+        </div>
+
+        <div class="campo-form">
+          <label for="ocupacao">Ocupação*</label>
+          <input type="text" id="ocupacao" name="ocupacao" placeholder="Digite sua ocupação atual" required>
+        </div>
+
+        <div class="campo-form">
+          <label for="celular">Celular*</label>
+          <input type="tel" id="celular" name="celular" placeholder="(00) 00000-0000" required>
+        </div>
+
+        <div class="campo-form">
+          <label>Histórico prévio de terapia ou acompanhamento psicológico*</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="historico-sim" name="historico" value="sim" required>
+              <label for="historico-sim">Sim</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="historico-nao" name="historico" value="nao" required>
+              <label for="historico-nao">Não</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="campo-form">
+          <label>Uso atual de medicação psiquiátrica*</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="medicacao-sim" name="medicacao" value="sim" required>
+              <label for="medicacao-sim">Sim</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="medicacao-nao" name="medicacao" value="nao" required>
+              <label for="medicacao-nao">Não</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="campo-form">
+          <label for="renda">Renda Mensal*</label>
+          <select id="renda" name="renda" required>
+            <option value="">Selecione sua renda mensal</option>
+            <option value="menos-1">Menos de 1 salário mínimo</option>
+            <option value="1-salario">1 salário mínimo</option>
+            <option value="2-salarios">2 salários mínimos</option>
+            <option value="mais-2">Mais de 2 salários mínimos</option>
+          </select>
+        </div>
+
+        <div class="campo-form">
+          <label for="periodo">Melhor período para agendamento*</label>
+          <select id="periodo" name="periodo" required>
+            <option value="">Selecione o melhor período</option>
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+          </select>
+        </div>
+
+        <div class="campo-form">
+          <label for="tipo-atendimento">Tipo de Atendimento*</label>
+          <select id="tipo-atendimento" name="tipo-atendimento" required>
+            <option value="">Selecione o tipo de atendimento</option>
+            <option value="presencial">Presencial</option>
+            <option value="online">Online</option>
+          </select>
+        </div>
+
+        <div class="campo-form">
+          <label for="razao">Razão pela qual deseja realizar terapia*</label>
+          <textarea id="razao" name="razao" rows="4" placeholder="Descreva brevemente o motivo pelo qual você busca terapia" required></textarea>
+        </div>
+
+        <button type="submit" class="botao-enviar">Enviar Inscrição</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
     <div class="footer-content">
@@ -121,6 +228,7 @@
 
   <!-- Scripts -->
   <script src="../../js/nav.js"></script>
+  <script src="../../js/clinicaSocial.js"></script>
 </body>
 
 </html>
