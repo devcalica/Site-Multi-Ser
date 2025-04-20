@@ -363,9 +363,13 @@ p, .avaliacoes .slide-avaliacoes .card-avaliacao p, .localizacao .container-loca
         width: 100%;
         height: 300px;
     }
+
+    .psicologia h1, .nutricao h1, .avaliacoes h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
 }
 
-/* Media Query para ajustes em telas muito pequenas */
 @media (max-width: 480px) {
     h1 {
         font-size: 2rem;
@@ -383,5 +387,10 @@ p, .avaliacoes .slide-avaliacoes .card-avaliacao p, .localizacao .container-loca
 
     .card-avaliacao {
         padding: 1rem;
+    }
+
+    .psicologia h1, .nutricao h1, .avaliacoes h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
 }

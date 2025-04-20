@@ -97,23 +97,38 @@
   </main>
 
   <div class="banner-locacao">
-
     <div class="conteudo-banner">
       <h2>Diferenciais da Sublocação</h2>
       <p>A sublocação em nosso espaço qualificado oferece um ambiente profissional estruturado. Um dos principais
         diferenciais é a possibilidade de acesso a uma infraestrutura completa, sem a necessidade de altos investimentos
         iniciais.
 
-
         Espaços já mobiliados, com internet de alta velocidade, recepção, salas de reunião e áreas comuns oferecem
         praticidade e economia para profissionais autônomos, pequenas empresas e startups.</p>
     </div>
-    <img src="/img/locacao-7.png" alt="Banner da locação">
+    <picture>
+      <source media="(max-width: 768px)" srcset="/img/locacao-7-mobile.png">
+      <img src="/img/locacao-7.png" alt="Banner da locação">
+    </picture>
   </div>
 
   <div class="precos">
-    <img src="/img/tabela-preco.png"
-      alt="Fixo: R$ 380,00 por mês (Um turno de 5horas por semana, reservado mensalmente para você.). Avulso: 50,00 por hora ou Turno único (3h) por 140,00 ou Turno único (5h) por 200,00 (Reserve quantas horas você precisar, de acordo com a disponibilidade do espaço.)">
+    <picture class="tabela-desktop">
+      <source media="(min-width: 769px)" srcset="/img/tabela-preco.png">
+      <img src="/img/tabela-preco.png" alt="Tabela de preços completa">
+    </picture>
+
+    <div class="tabelas-mobile">
+      <picture>
+        <source media="(max-width: 768px)" srcset="/img/tabela-1.png">
+        <img src="/img/tabela-1.png" alt="Tabela de preços fixos">
+      </picture>
+      
+      <picture>
+        <source media="(max-width: 768px)" srcset="/img/tabela-2.png">
+        <img src="/img/tabela-2.png" alt="Tabela de preços avulsos">
+      </picture>
+    </div>
   </div>
 
   <!-- Agendamento -->
@@ -134,7 +149,8 @@
       <input type="text" id="cell-form" name="cell" placeholder="(00) 00000-0000" required> <br>
 
       <label for="data">Data</label>
-      <input type="date" id="data-form" name="data" placeholder="Date" min="2025-04-24T09:00" max="2025-04-30T16:00" required> <br>
+      <input type="date" id="data-form" name="data" placeholder="Date" min="2025-04-24T09:00" max="2025-04-30T16:00"
+        required> <br>
 
       <label for="observacao">Observações</label>
       <input type="text" id="obs-form" name="observacao" placeholder="Digite sua mensagem." required> <br>
