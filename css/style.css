@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Geral */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Barra de Navegação */
 header {
     background-color: #6EAE9C;
     padding: 1rem;
@@ -67,7 +69,7 @@ nav img {
     border-radius: 50%;
     cursor: pointer;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
