@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+
+.container-clinica {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    min-height: 60vh;
+}
+
+.clinica-social {
+    background-color: #15201d;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.clinica-social h1 {
+    font-family: 'Baloo 2';
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.conteudo-clinica {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.clinica-social h2 {
+    font-family: 'Baloo 2';
+    font-size: 1.6rem;
+    color: #6EAE9C;
+    letter-spacing: 1px;
+    margin-bottom: 0.4rem;
+}
+
+.clinica-social p, .clinica-particular p {
+    font-family: 'Baloo 2';
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+.parte-1, .parte-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.parte-2 {
+    grid-column: 1 / -1;
+}
+
+.clinica-particular {
+    background: url('/img/psico-particular.jpg') center/cover;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.clinica-particular::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 2, 2, 0.932);
+}
+
+.clinica-particular h2 {
+    font-family: 'Baloo 2';
+    font-size: 2.2rem;
+    color: #6EAE9C;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.clinica-particular p {
+    font-family: 'Baloo 2';
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+.clinica-particular a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #6EAE9C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Baloo 2';
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.clinica-particular a:hover {
+    background-color: #3b6d60;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .container-clinica {
+        grid-template-columns: 1fr;
+    }
+
+    .clinica-social {
+        padding: 3rem 2rem;
+    }
+
+    .clinica-social h1 {
+        font-size: 2.4rem;
+    }
+
+    .conteudo-clinica {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .clinica-particular {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .clinica-social {
+        padding: 2rem 1rem;
+    }
+
+    .clinica-social h1 {
+        font-size: 2rem;
+    }
+
+    .clinica-social h2 {
+        font-size: 1.8rem;
+    }
+
+    .clinica-social p {
+        font-size: 1rem;
+    }
+
+    .clinica-particular h2 {
+        font-size: 1.8rem;
+    }
+
+    .clinica-particular p {
+        font-size: 1rem;
+    }
+}
