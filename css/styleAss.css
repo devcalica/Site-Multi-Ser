@@ -44,6 +44,7 @@ h1 {
 .botao-agendamento:hover {
     background-color: #3b6d60;
     color: #fffd83;
+    transform: scale(1.02);
     transition: 0.5s;
 }
 

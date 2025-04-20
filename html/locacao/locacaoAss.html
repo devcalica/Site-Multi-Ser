@@ -110,10 +110,39 @@
     </div>
     <img src="/img/locacao-7.png" alt="Banner da locação">
   </div>
-  
+
   <div class="precos">
-    <img src="/img/tabela-preco.png" alt="Fixo: R$ 380,00 por mês (Um turno de 5horas por semana, reservado mensalmente para você.). Avulso: 50,00 por hora ou Turno único (3h) por 140,00 ou Turno único (5h) por 200,00 (Reserve quantas horas você precisar, de acordo com a disponibilidade do espaço.)">
+    <img src="/img/tabela-preco.png"
+      alt="Fixo: R$ 380,00 por mês (Um turno de 5horas por semana, reservado mensalmente para você.). Avulso: 50,00 por hora ou Turno único (3h) por 140,00 ou Turno único (5h) por 200,00 (Reserve quantas horas você precisar, de acordo com a disponibilidade do espaço.)">
   </div>
+
+  <!-- Agendamento -->
+  <section class="formulario-locacao">
+
+    <form id="form-location">
+      <div>
+        <h2>Entre em Contato</h2>
+      </div>
+
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome-form" name="nome" placeholder="Nome Completo" required> <br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email-form" name="email" placeholder="exemplo@exemplo.com" required> <br>
+
+      <label for="cell">Celular Pessoal</label>
+      <input type="text" id="cell-form" name="cell" placeholder="(00) 00000-0000" required> <br>
+
+      <label for="data">Data</label>
+      <input type="date" id="data-form" name="data" placeholder="Date" min="2025-04-24T09:00" max="2025-04-30T16:00" required> <br>
+
+      <label for="observacao">Observações</label>
+      <input type="text" id="obs-form" name="observacao" placeholder="Digite sua mensagem." required> <br>
+
+      <button type="submit" class="botao-agendamento" id="button-form">Agendar Visita</button>
+    </form>
+
+  </section>
 
   <section class="localizacao">
     <div class="container-localizacao">
