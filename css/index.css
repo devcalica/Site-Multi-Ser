@@ -1,5 +1,10 @@
 /* Página home */
 
+* {
+ margin: 0;
+ padding: 0;
+}
+
 #text-intro {
   max-width: 600px;
   padding: 60px;
@@ -386,6 +391,33 @@ margin-left: 28rem;
 
 
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #4a8b7a;
+  padding: 15px;
+}
+
+#title-footer {
+  color: #f0f0f0;
+  margin-top: 20px;
+}
+
+#img-footer {
+  height: 50px;
+  margin-top: 5px;
+}
+
+#icons-footer {
+  color: #f0f0f0;
+  margin-top: 10px;
+}
+
+.footer {
+  padding: 10px;
+}
+
 
 @media (max-width: 768px) {
   .titulo-bemestar h2 {
@@ -456,10 +488,12 @@ margin-left: 28rem;
     align-items: center;
     text-align: center;
     padding: 10px;
+  }
+
+    #title-footer,#icons-footer,#img-footer {
+        margin: 10px 0;
+    }
 }
 
-#title-footer,#icons-footer,#img-footer {
-    margin: 10px 0;
-}
 
-}
+
