@@ -38,7 +38,7 @@
 } 
 
 #container-funciona{
-  margin-top: 30px;
+  margin-top: 20px;
   max-width: 100%;
 }
 
@@ -59,7 +59,8 @@ max-width: 25%;
 
 .publico-4 h4{
   color: #ffffff;
-  margin-top: 100px;
+  max-width: 200px;
+  margin-top: 60px;
 }
 
 body{
@@ -124,20 +125,81 @@ footer {
     font-size: 20px;
   }
   
-   /* Responsividade */
-  @media (max-width: 768px) {
-    .footer {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    #text-footer {
-      margin: 10px 0;
-    }
-  
-    #icons-footer ul {
-      justify-content: center;
-    }
+
+  /* Responsividade */
+ /* Telas até 1024px - Tablets grandes e notebooks menores */
+@media (max-width: 1024px) {
+  .agendamento-particular {
+    width: 90%;
+    right: 5%;
+    top: 250px;
+    transform: translateY(-50%);
   }
 
+  .cadastro-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .como-funciona-2, .lista-de-espera-3 {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  .footer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #text-footer h2 {
+    font-size: 12px;
+    height: auto;
+  }
+}
+
+/* Telas até 768px - Tablets e celulares em modo paisagem */
+@media (max-width: 768px) {
+  .agendamento-particular {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+  }
+
+  .cadastro-1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Telas até 480px - Celulares */
+@media (max-width: 480px) {
+  .agendamento-particular {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  #logo-multiser-footer img {
+    height: 40px;
+  }
+
+  #icons-footer i {
+    font-size: 18px;
+  }
+
+  #text-footer h2 {
+    font-size: 10px;
+  }
+}
