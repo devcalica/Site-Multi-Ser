@@ -76,7 +76,7 @@ body {
  
 }
 
-.botao1:hover{
+.botao12 :hover{
   background-color: white; 
   color: #195541; 
   border: 2px solid #195541; 
@@ -386,6 +386,27 @@ margin-left: 28rem;
   border-radius: 12px; 
   object-fit: cover;
 }
+
+.botao12{
+  background-color: #195541;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  margin-left: 22rem;
+  height: 50px;
+  width: 300px;
+  margin-top: -2rem;
+}
+
+.botao12 :hover{
+  background-color: white; 
+  color: #195541; 
+  border: 2px solid #195541; 
+}  
+
+
+
 
 /* navegação */
 
