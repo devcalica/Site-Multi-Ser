@@ -110,16 +110,22 @@
 
 .banner-locacao {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr minmax(auto, 800px);
     width: 100%;
     background-color: #15201d;
-    font-size: 0; /* Remove espaço extra */
+    font-size: 0;
+    min-height: 600px;
 }
 
 .conteudo-banner {
     padding: 4rem;
     padding-bottom: 0;
-    font-size: 1rem; /* Restaura o tamanho da fonte para o conteúdo */
+    font-size: 1rem;
+    max-width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .conteudo-banner h2 {
@@ -137,15 +143,19 @@
 }
 
 .banner-locacao picture {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     font-size: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .banner-locacao img {
-    display: block;
     height: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
+    width: auto;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* Seção Localização */
@@ -226,6 +236,58 @@
 }
 
 /* Media Queries */
+@media (min-width: 1501px) {
+    .banner-locacao {
+        grid-template-columns: 1fr minmax(auto, 900px);
+    }
+
+    .banner-locacao picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-locacao img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .banner-locacao {
+        grid-template-columns: 1fr minmax(auto, 600px);
+        min-height: 550px;
+    }
+
+    .conteudo-banner {
+        padding: 2rem 3rem;
+    }
+
+    .conteudo-banner h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .conteudo-banner p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+
+    .banner-locacao picture {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-locacao img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
 @media (max-width: 1024px) {
     .container-locacao {
         grid-template-columns: 1fr;
@@ -249,7 +311,8 @@
 
     .banner-locacao img {
         width: 100%;
-        height: auto;
+        max-height: 500px;
+        object-fit: contain;
     }
 
     .conteudo-banner {
@@ -355,9 +418,19 @@
         grid-template-columns: 1fr;
     }
 
+    .banner-locacao picture {
+        height: auto;
+        max-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .banner-locacao img {
         width: 100%;
         height: auto;
+        max-height: 400px;
+        object-fit: contain;
     }
 
     .formulario-locacao {
@@ -429,6 +502,14 @@
 
     #form-location h2 {
         font-size: 1.8rem;
+    }
+
+    .banner-locacao picture {
+        max-height: 300px;
+    }
+
+    .banner-locacao img {
+        max-height: 300px;
     }
 }
 
