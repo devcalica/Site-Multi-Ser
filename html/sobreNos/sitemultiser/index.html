@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Multiser</title>
+  <link rel="stylesheet" href="Sn.css">
+  <script src="acessibilidade.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <ul class="links">
+      <a href="../../index.html"><li>Home</li></a>
+      <a href="../sobreNos/sobreNos.html"><li>Sobre nós</li></a>
+      <a href="../clinicaSocial/clinicaSocial.html"><li>Clínica social</li></a>
+      <a href="locacao.html"><li>Locação</li></a>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="top-banner">
+      <img id="banner-image" src="teste.png" alt="Clínica Multissaúde">
+    </div>
+  </header>
+
+  <button class="botao-acessibilidade" aria-label="Botão de acessibilidade">
+    <i class="fas fa-universal-access"></i>
+  </button>
+
+  <main>
+    <div class="team-grid">
+      <a href="https://www.instagram.com/ciclicidade.feminina/?hl=pt" class="team-card" target="_blank" rel="noopener">
+        <img src="psicologa1-removebg-preview.png" alt="Psicóloga Mônica" class="original">
+        <img src="psicologa1comlogo.png" alt="Instagram @ciclicidade.feminina" class="hover-img">
+      </a>
+      <a href="https://www.instagram.com/lorenamagalhaes.psi/?hl=pt" class="team-card" target="_blank" rel="noopener">
+        <img src="psicologa2-removebg-preview.png" alt="Psicóloga Lorena" class="original">
+        <img src="psicologa2comlogo.png" alt="Instagram @lorenamagalhaes.psi" class="hover-img">
+      </a>
+      <a href="https://www.instagram.com/nutricarolinaoliveira/?hl=pt" class="team-card" target="_blank" rel="noopener">
+        <img src="psicologa3-removebg-preview.png" alt="Nutricionista Carolina" class="original">
+        <img src="psicologa3comlogo.png" alt="Instagram @nutricarolinaoliveira" class="hover-img">
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="logo.png" alt="Logo Clínica Multissaúde" class="footer-logo">
+      <div class="footer-info">
+        <p>Torre Norte - Av. Tancredo Neves, 1632 - sala 510 - Caminho das Árvores, Salvador - BA, 40301-155</p>
+        <p>WhatsApp: (71) 99404-4195</p>
+        <p>Email: andradeaislan837@gmail.com</p>
+        <p class="copyright">Clínica Multiser © 2025 — Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const botao = document.querySelector('.botao-acessibilidade');
+    const banner = document.getElementById('banner-image');
+    let acessivel = false;
+  
+    botao.addEventListener('click', () => {
+      acessivel = !acessivel;
+      document.body.classList.toggle('modo-acessivel', acessivel);
+      
+      if (acessivel) {
+        banner.setAttribute('src', 'banneracess.png');
+      } else {
+        banner.setAttribute('src', 'teste.png');
+      }
+    });
+  </script>
+  
+</body>
+</html>
