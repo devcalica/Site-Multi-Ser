@@ -87,8 +87,7 @@ font-family: 'Poppins', sans-serif;
 background-size: cover;
 padding: 0px;
 max-width: 2000px;
-/* background-color: #F5F5F5; */
-/* background-image: url(../img/sala55.jpg); */
+background-image: url(/img/background.jpg); 
 }
 
 /*FORMULÁRIO*/
@@ -109,9 +108,8 @@ justify-content: center;
 align-items: center;
 display: flex;
 flex-direction: column;
-} 
-anotação do tutor: caso vocês queiram deixar esse forms centralizado, me mandem msg.(ou tentem fazer sozinhas, ta ai uma base doq vcs vão ter que fazer)  
-*/
+}  */
+
 
 input, option{
 background: none;
@@ -127,7 +125,7 @@ text-align: center;
 
 /* Serve para colocar a barra final */
 footer {
-  background-color: #a0dac9;
+  background-color: #4a8b7a;
   color: white;
   padding: 2rem;
   margin-top: 40px;
